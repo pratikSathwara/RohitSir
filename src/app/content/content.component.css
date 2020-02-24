@@ -1,0 +1,10 @@
+    .form{ 
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: #ffff;
+}
+/* input.ng-invalid.ng-touched{
+  border-color: red;
+} */

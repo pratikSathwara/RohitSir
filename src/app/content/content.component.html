@@ -1,0 +1,74 @@
+<!-- 
+<div class="form">
+  <div class="container-fluid">
+    <div class="row">
+  <div class="offset-3 col-md-6 offset-3">
+    <h2 class="text-center">Registration Form</h2>
+    <pre>{{username.value | json}}</pre>
+    <form name="f" #contactus="ngForm"  (ngSubmit)="submit(contactus)">
+      <div class="form-group">
+        <input type="text" name="firstname" placeholder="enter your first name" class="form-control" username required   [(ngModel)]="username"  #username=ngModel/>
+        <span class="help-bpx" *ngIf="username.touched && !username.valid">please enter your firstname</span> 
+      </div>
+    <div class="form-group">
+      <input type="text" ngModel name="Last name" placeholder="enter your Last name" class="form-control" password required ngModel #password="ngModel"/>
+      <span class="help-bpx" *ngIf="password.touched && !password.valid">please enter your lastname</span> 
+    </div>
+      <div class="form-group">
+      <input type="text" ngModel name="Address" placeholder="enter your Address" class="form-control"/>
+      </div> 
+      <div class="form-group">
+        <input type="text" ngModel name="Last name" placeholder="enter your Username" class="form-control"/>
+        </div>
+        <div class="form-group">
+        <input type="password" ngModel name="Address" placeholder="enter your Password" class="form-control"/>
+        </div> 
+      <label>Select Gender:</label>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" ngModel name="gender" value="male" class="form-check-input"> Male 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+      <input type="radio" ngModel name="gender" value="Female" class="form-check-input"> Female 
+    </label>
+  </div>    
+  <div class="form-group">
+    <label for="sel1">Select list:</label>
+      <select name="CountaryList"  class="form-control">
+        <option value="">Select</option> 
+        <option [ngValue]="c.id" *ngFor="let c of CountaryList" [selected]="c.isselected">
+           {{c.name}}
+        </option>
+      </select>
+      </div>
+      <label>Select vehicle: </label>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" ngModel="car" 
+          name="countary">Car
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" ngModel name="countary" value="Bike">Bike
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" ngModel name="countary" value="Bicycle" id="myCheck">Bicycle
+        </label>
+      </div>
+      <br> 
+      <div class="form-group">
+        <button class="btn btn-danger" [disabled]="!contactus.valid" value="submit">Submit</button>
+        </div>
+  
+    </form>
+    </div>
+    </div>
+  </div>
+  </div>
+  {{username|json}} -->
+  
