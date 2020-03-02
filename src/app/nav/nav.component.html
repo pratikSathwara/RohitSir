@@ -1,2 +1,10 @@
-{{localvar}}
-hello
+<ul>
+    <li *ngFor="let movee of mydata">
+        {{movee.username}}
+    </li>
+    <ul>
+        <li *ngFor="let movee of mydata">
+            {{movee.address.street}}
+        </li>
+    </ul>
+</ul>

@@ -13,7 +13,7 @@ import { InformationDirective } from './information.directive';
 import { TestComponent } from './test/test.component';
 import { ReactiveDemoComponent } from './reactive-demo/reactive-demo.component';
 import {DateserviceService } from './dateservice.service';
-import { } from 'D:\Angprac\myapp\src\app/myservice.service'
+import { HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +31,10 @@ import { } from 'D:\Angprac\myapp\src\app/myservice.service'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DateserviceService],
   bootstrap: [NavComponent]
 })
 export class AppModule { }

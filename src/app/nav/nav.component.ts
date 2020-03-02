@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {DateserviceService } from './dateservice.service';
+import {DateserviceService } from '../dateservice.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  localvar:string;
-  constructor() { }
+  mydata:any=[];
+  constructor(private dateser:DateserviceService) { }
   
   ngOnInit() {
-  // this.localvar = date.toString();
+   this.get();
+
 
   }
+  get(){
+    this.dateser.get().subscribe(
+      res=>this.mydata=res );
+    }
 }
