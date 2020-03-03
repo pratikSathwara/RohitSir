@@ -14,6 +14,7 @@ import { TestComponent } from './test/test.component';
 import { ReactiveDemoComponent } from './reactive-demo/reactive-demo.component';
 import {DateserviceService } from './dateservice.service';
 import { HttpClientModule} from '@angular/common/http';
+import { IntroRxjsComponent } from './intro-rxjs/intro-rxjs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { HttpClientModule} from '@angular/common/http';
     LastnameDirective,
     InformationDirective,
     TestComponent,
-    ReactiveDemoComponent
+    ReactiveDemoComponent,
+    IntroRxjsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,6 @@ import { HttpClientModule} from '@angular/common/http';
     HttpClientModule
   ],
   providers: [DateserviceService],
-  bootstrap: [NavComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
