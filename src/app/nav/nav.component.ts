@@ -13,7 +13,6 @@ export class NavComponent implements OnInit {
   ngOnInit() {
    this.get();
 
-
   }
   get(){
     this.dateser.get().subscribe(
