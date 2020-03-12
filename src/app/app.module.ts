@@ -15,6 +15,9 @@ import { ReactiveDemoComponent } from './reactive-demo/reactive-demo.component';
 import {DateserviceService } from './dateservice.service';
 import { HttpClientModule} from '@angular/common/http';
 import { IntroRxjsComponent } from './intro-rxjs/intro-rxjs.component';
+import { EmployeeCreateComponent } from './employee-create/employee-create.component';
+import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,10 @@ import { IntroRxjsComponent } from './intro-rxjs/intro-rxjs.component';
     InformationDirective,
     TestComponent,
     ReactiveDemoComponent,
-    IntroRxjsComponent
+    IntroRxjsComponent,
+    EmployeeCreateComponent,
+    EmployeeEditComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,

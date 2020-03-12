@@ -1,0 +1,16 @@
+{
+  "employees":[{
+      "id":1,
+      "firstname":"pragnesh",
+      "lastname":"Kadiya",
+      "phone":8980137690,
+      "email":"pragnesh14@gmail.com"
+  },
+  {
+      "id":2,
+      "firstname":"partik",
+      "lastname":"sathvara",
+      "phone":8980137690,
+      "email":"pratk14@gmail.com"
+  }
+]}
