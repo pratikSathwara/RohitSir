@@ -1,10 +1,34 @@
-<ul>
-    <li *ngFor="let movee of mydata">
-        {{movee.username}}
-    </li>
-    <ul>
-        <li *ngFor="let movee of mydata">
-            {{movee.address.street}}
-        </li>
-    </ul>
-</ul>
+<table class="name_table">
+    <tbody>
+        <tr>
+            <td>Number</td>
+            <td>name</td>
+            <td>Age</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+            <td>{{city}}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>{{name2}}</td>
+            <td>{{age2}}</td>
+            <td>{{city2}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>{{name3}}</td>
+            <td>{{age3}}</td>
+            <td>{{city3}}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>{{name4}}</td>
+            <td>T0tal age is : + {{totalAge}}</td>
+            <td>{{total}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -8,8 +8,22 @@ import { Employee} from '../shared/employee'
 })
 export class MyapiService {
    localUrl = "http://localhost:3000";
-
+  // http://localhost:3000/employees
   constructor(private httpclient:HttpClient) {
 
    }
+
+Displayemployeelist():Observable<Employee>{
+
+  return this.httpclient.get<Employee>(this.localUrl+'/employees')
+  .pipe(
+    retry(1)
+    //catchError(this.hendle)
+  )
+
+}
+
+//handleError(){}
+
+
 }

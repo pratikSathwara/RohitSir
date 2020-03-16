@@ -8,15 +8,15 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 const routes: Routes = [{
   path:'createmloyee',
-  component:'EmployeeCreateComponent',
+  component:EmployeeCreateComponent
 },
 {
   path:'editemployee/:id',
-  component:'EmployeeEditComponent'
+  component: EmployeeEditComponent 
 },
 {
   path:'listemployee',
-  component:'EmployeeListComponent'
+  component:EmployeeListComponent
 }
 ];
 

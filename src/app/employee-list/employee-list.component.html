@@ -1,1 +1,9 @@
-<p>employee-list works!</p>
+<table>
+    <tr *ngFor="let empdata of mydata">
+        <td>{{empdata.id}}</td>
+        <td>{{empdata.firstname}}</td>
+        <td>{{empdata.lastname}}</td>
+        <td>{{empdata.phone}}</td>
+        <td>{{empdata.email}}</td>
+    </tr>
+</table>

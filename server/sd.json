@@ -1,0 +1,21 @@
+{
+    "student":[{
+       "sid":1,
+       "sname":"Pragnesh",
+       "semail":"pragnesh@gmail.com",
+       "sphone":898022765,
+       "sschoolname":"Lore Lipsum",
+       "sfathername":"chamanbhai" 
+    },
+    {
+        "sid":2,
+       "sname":"pratik",
+       "semail":"pratik@gmail.com",
+       "sphone":898022765,
+       "sschoolname":"Lore Lipsum",
+       "sfathername":"chamanbhai"
+
+    }
+
+]
+}
