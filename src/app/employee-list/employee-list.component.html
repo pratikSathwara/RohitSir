@@ -1,4 +1,11 @@
-<table>
+<table class="table table-bordered">
+    <tr class="bg-dark text-white">
+        <th>ID</th>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>phone</th>
+        <th>email</th>
+    </tr>
     <tr *ngFor="let empdata of mydata">
         <td>{{empdata.id}}</td>
         <td>{{empdata.firstname}}</td>

@@ -14,7 +14,7 @@ export class EmployeeListComponent implements OnInit {
     this.loaddata();
   }
 loaddata(){
-alert("called");
+// alert("called");
 return this.myservices.Displayemployeelist().subscribe((data)=>{
   this.mydata=data;
 })
